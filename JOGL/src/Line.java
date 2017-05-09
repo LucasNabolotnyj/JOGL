@@ -56,16 +56,16 @@ public  class Line implements GLEventListener {
 		//JANELA
 		gl.glBegin (GL2.GL_QUADS);//static field
 		gl.glColor3f(0f, 0f, 1f);
-		gl.glVertex2f(-0.20f,0.40f);
-		gl.glVertex2f(-0.20f,0.30f);
-		gl.glVertex2f(-0.40f,0.30f);
+		gl.glVertex2f(-0.15f,0.40f);
+		gl.glVertex2f(-0.15f,0.20f);
+		gl.glVertex2f(-0.40f,0.20f);
 		gl.glVertex2f(-0.40f,0.40f);
 		gl.glEnd();
 		//PORTA
 		gl.glBegin (GL2.GL_QUADS);//static field
 		gl.glColor3f(1f, 0f, 0f);
-		gl.glVertex2f(0.20f,-0.50f);
-		gl.glVertex2f(0.20f,0f);
+		gl.glVertex2f(0.10f,-0.50f);
+		gl.glVertex2f(0.10f,0f);
 		gl.glVertex2f(0.40f,0f);
 		gl.glVertex2f(0.40f,-0.50f);
 		gl.glEnd();
