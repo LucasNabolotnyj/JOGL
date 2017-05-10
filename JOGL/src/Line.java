@@ -37,40 +37,60 @@ public  class Line implements GLEventListener {
 		//		gl.glEnd();
 
 
-		//		CASA EXEMPLO
-		//	PAREDE
-		gl.glBegin (GL2.GL_QUADS);//static field
-		gl.glColor3f(0f, 1f, 0f);
-		gl.glVertex2f(0.50f,-0.50f);
-		gl.glVertex2f(0.50f,0.50f);
-		gl.glVertex2f(-0.50f,0.50f);
-		gl.glVertex2f(-0.50f,-0.50f);
-		gl.glEnd();
-		//TELHADO
-		gl.glBegin (GL2.GL_TRIANGLES);//static field
-		gl.glColor3f(0f, 1f, 1f);
-		gl.glVertex2f(0f,1.0f);
-		gl.glVertex2f(-0.60f,0.51f);
-		gl.glVertex2f(0.60f,0.51f);
-		gl.glEnd();
-		//JANELA
-		gl.glBegin (GL2.GL_QUADS);//static field
-		gl.glColor3f(0f, 0f, 1f);
-		gl.glVertex2f(-0.15f,0.40f);
-		gl.glVertex2f(-0.15f,0.20f);
-		gl.glVertex2f(-0.40f,0.20f);
-		gl.glVertex2f(-0.40f,0.40f);
-		gl.glEnd();
-		//PORTA
-		gl.glBegin (GL2.GL_QUADS);//static field
-		gl.glColor3f(1f, 0f, 0f);
-		gl.glVertex2f(0.10f,-0.50f);
-		gl.glVertex2f(0.10f,0f);
-		gl.glVertex2f(0.40f,0f);
-		gl.glVertex2f(0.40f,-0.50f);
-		gl.glEnd();
+//		//		CASA EXEMPLO
+//		//	PAREDE
+//		gl.glBegin (GL2.GL_QUADS);//static field
+//		gl.glColor3f(0f, 1f, 0f);
+//		gl.glVertex2f(0.50f,-0.50f);
+//		gl.glVertex2f(0.50f,0.50f);
+//		gl.glVertex2f(-0.50f,0.50f);
+//		gl.glVertex2f(-0.50f,-0.50f);
+//		gl.glEnd();
+//		//TELHADO
+//		gl.glBegin (GL2.GL_TRIANGLES);//static field
+//		gl.glColor3f(1f, 0f, 1f);
+//		gl.glVertex2f(0f,1.0f);
+//		gl.glVertex2f(-0.60f,0.51f);
+//		gl.glVertex2f(0.60f,0.51f);
+//		gl.glEnd();
+//		//JANELA
+//		gl.glBegin (GL2.GL_QUADS);//static field
+//		gl.glColor3f(0f, 0f, 1f);
+//		gl.glVertex2f(-0.15f,0.40f);
+//		gl.glVertex2f(-0.15f,0.20f);
+//		gl.glVertex2f(-0.40f,0.20f);
+//		gl.glVertex2f(-0.40f,0.40f);
+//		gl.glEnd();
+//		//PORTA
+//		gl.glBegin (GL2.GL_QUADS);//static field
+//		gl.glColor3f(1f, 1f, 0f);
+//		gl.glVertex2f(0.10f,-0.50f);
+//		gl.glVertex2f(0.10f,0f);
+//		gl.glVertex2f(0.40f,0f);
+//		gl.glVertex2f(0.40f,-0.50f);
+//		gl.glEnd();
+		
+		
+		
+//		float i = 0.0f;
+//		gl.glColor3f(1f, 1f, 1f);
+//	      for(i=0.0f; i==1f; i=i+0.10f){
+//	      gl.glBegin (GL2.GL_LINES);//static field
+//	      gl.glVertex3f(1,-1.0f,i);
+//	      gl.glVertex3f(-1,-1.0f,i);
+//	      gl.glEnd();
+//	      }	
+	      float i = -1.0f;
+			gl.glColor3f(1f, 1f, 1f);
+			gl.glBegin (GL2.GL_LINES);//static field
+		      while( i!=1f){
+		      
+		      gl.glVertex2f(1,i);
+		      gl.glVertex2f(-1,i);
+		      i=i+0.25f;
+		      }
 
-
+		      gl.glEnd();
 
 	}
 
