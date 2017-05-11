@@ -1,3 +1,4 @@
+package projetos;
 import javax.swing.JFrame;
 
 import com.jogamp.opengl.GL2;

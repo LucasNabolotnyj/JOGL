@@ -1,3 +1,4 @@
+package projetos;
 
 
 import javax.swing.JFrame;
@@ -12,7 +13,6 @@ import com.jogamp.opengl.glu.GLU;
 import com.jogamp.opengl.util.FPSAnimator;
 
 public class Cubo implements GLEventListener {
-
 	private GLU glu = new GLU();
 	   private float rtri = 0.0f; 
 	 public float h = 1 ;
@@ -200,22 +200,24 @@ public class Cubo implements GLEventListener {
 	   }
 	      
 	   public static void main( String[] args ) {
-		
-	      // TODO Auto-generated method stub
-	      final GLProfile profile = GLProfile.get( GLProfile.GL2 );
-	      GLCapabilities capabilities = new GLCapabilities( profile );
-			
-	      // The canvas
-	      final GLCanvas glcanvas = new GLCanvas( capabilities );
-	      Cubo triangledepthtest = new Cubo();
-			
-	      glcanvas.addGLEventListener( triangledepthtest );
-	      glcanvas.setSize( 400, 400 );
-			
-	      final JFrame frame = new JFrame ( "CUBO" );
-	      frame.getContentPane().add(glcanvas);
-	      frame.setSize( frame.getContentPane().getPreferredSize() );
-	      frame.setVisible( true );
+
+
+		    // TODO Auto-generated method stub
+		    final GLProfile profile = GLProfile.get( GLProfile.GL2 );
+		    GLCapabilities capabilities = new GLCapabilities( profile );
+				
+		    // The canvas
+		    final GLCanvas glcanvas = new GLCanvas( capabilities );
+		    Cubo triangledepthtest = new Cubo();
+				
+		    glcanvas.addGLEventListener( triangledepthtest );
+		    glcanvas.setSize( 1200, 400 );
+				
+		    JFrame frame = new JFrame ( "CUBO" );
+		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    frame.getContentPane().add(glcanvas);
+		    frame.setSize( frame.getContentPane().getPreferredSize() );
+		    frame.setVisible( true );
 	      final FPSAnimator animator = new FPSAnimator( glcanvas, 300, true);
 			
 	      animator.start();
