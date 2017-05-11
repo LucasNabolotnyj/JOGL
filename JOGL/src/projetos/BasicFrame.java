@@ -165,6 +165,8 @@ public class BasicFrame implements GLEventListener {
 		glcanvas.setSize( 400, 400 );
 
 		final JFrame frame = new JFrame ( "3d Triangle (solid)" );
+
+	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(glcanvas);
 		frame.setSize( frame.getContentPane().getPreferredSize() );
 		frame.setVisible( true );
