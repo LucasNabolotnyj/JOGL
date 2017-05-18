@@ -80,7 +80,11 @@ public  class Projetos2D implements GLEventListener {
 		//	      gl.glVertex3f(1,-1.0f,i);
 		//	      gl.glVertex3f(-1,-1.0f,i);
 		//	      gl.glEnd();
-		//	      }	
+		//	      }
+
+		//gl.glBegin (GL2.GL_LINE_STRIP);
+		//
+		
 		float i = -1.0f;
 		gl.glColor3f(1f, 1f, 1f);
 		gl.glBegin (GL2.GL_LINES);//static field
