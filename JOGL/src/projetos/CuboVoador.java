@@ -42,7 +42,7 @@ public class CuboVoador implements GLEventListener {
 //		glu.gluLookAt(Math.cos(rtri) * 6, 0, Math.sin(rtri) * 6, 0, 0, 0, 0, 1, 0);
 		//primeiros 3 numeros: terceira pessoa(5 de Z) 4 a 6 numeros: apontando
 		//para o cubo(meio do cubo ou Z=0)
-				      glu.gluLookAt((5f+velocidade), (5f+forca), 5, velocidade, forca, 0, 0, 1, 0);
+				      glu.gluLookAt((6f+velocidade), (6f+forca), 0, velocidade, forca, 0, 0, 1, 0);
 		gl.glMatrixMode( GL2.GL_MODELVIEW );
 		gl.glLoadIdentity();
 
@@ -307,7 +307,9 @@ public class CuboVoador implements GLEventListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(glcanvas);
 		frame.setSize( 1000,800);
+		frame.isFocusable();
 		frame.setFocusable(true);
+		
 		frame.setVisible( true );
 		final FPSAnimator animator = new FPSAnimator( glcanvas, 300, true);
 
